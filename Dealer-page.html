@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FieldTurf Landscape | Become a Dealer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #007A33;
+      --green-dk: #00522A;
+      --green-bg: #F7FBF8;
+      --ink: #1a1a1a;
+      --txt: #555;
+      --muted: #888;
+      --border: #DEDEDE;
+      --white: #fff;
+      --W: 1440px;
+      --px: 60px;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: var(--txt);
+      background: var(--white);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .C {
+      max-width: var(--W);
+      margin: 0 auto;
+      padding: 0 var(--px);
+    }
+
+    /* ─── UTILITY BAR ─── */
+    .ubar {
+      background: #1a1a1a;
+      height: 36px;
+      display: flex;
+      align-items: center;
+    }
+
+    .ubar .C {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ubar-l,
+    .ubar-r {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .ubar a {
+      font-size: 12px;
+      color: #bbb;
+      font-weight: 600;
+    }
+
+    .ubar a:hover {
+      color: #fff;
+    }
+
+    .ubar-phone {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* ─── NAVBAR ─── */
+    .nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      height: 72px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav .C {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-box {
+      width: 38px;
+      height: 38px;
+      background: var(--green);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-box svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+    }
+
+    .logo-name {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .logo-sub {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--green);
+      text-transform: uppercase;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .navlinks span {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      padding: 8px 13px;
+      border-radius: 3px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .navlinks span:hover {
+      background: var(--green-bg);
+    }
+
+    .navlinks span::after {
+      content: '▾';
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .nav-cta {
+      background: var(--green);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      white-space: nowrap;
+      border: none;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .nav-cta:hover {
+      background: var(--green-dk);
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: #fff;
+      padding: 72px 0 68px;
+    }
+
+    .hero .C {
+      display: grid;
+      grid-template-columns: 0.9fr 1.2fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .hero-lead {
+      font-size: 18px;
+      color: var(--txt);
+      line-height: 1.6;
+      max-width: 580px;
+    }
+
+    .hero-check {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-top: 22px;
+      font-size: 16px;
+      color: var(--txt);
+      font-weight: 600;
+    }
+
+    .hero-check-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #F7FBF8;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .btn-g {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 0 26px;
+      height: 48px;
+      border-radius: 3px;
+      border: 2px solid var(--green);
+      cursor: pointer;
+      transition: background .15s;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .btn-g:hover {
+      background: var(--green-dk);
+      border-color: var(--green-dk);
+    }
+
+    .btn-o {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 0 26px;
+      height: 48px;
+      border-radius: 3px;
+      border: 2px solid var(--green);
+      cursor: pointer;
+      transition: background .15s;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .btn-o:hover {
+      background: #F7FBF8;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    /* ─── PROJECT BAND ─── */
+    .pband {
+      padding: 48px 0;
+    }
+
+    .pband-card {
+      background: var(--green-bg);
+      border-radius: 16px;
+      padding: 48px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .pband-card h3 {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .pband-card p {
+      font-size: 16px;
+      color: var(--txt);
+      max-width: 820px;
+      line-height: 1.55;
+    }
+
+    /* ─── WHY SECTION ─── */
+    .why {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .why .C {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 80px;
+      align-items: flex-start;
+    }
+
+    .why-left {}
+
+    .why-eyebrow {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 22px;
+    }
+
+    .why h2 {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+
+    .why-desc {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .why-img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .why-points {}
+
+    .why-pt {
+      display: flex;
+      gap: 36px;
+      padding: 24px 0;
+      align-items: flex-start;
+    }
+
+    .why-n {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #F7FBF8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: #007A33;
+      font-style: normal;
+      flex-shrink: 0;
+    }
+
+    .why-pt-body h4 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #161616;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .why-pt-body p {
+      font-size: 18px;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    .why-cta {
+      margin-top: 24px;
+    }
+
+    /* ─── APPLICATIONS ─── */
+    .apps {
+      background: var(--green-bg);
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .sec-eyebrow {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 22px;
+    }
+
+    .sec-h2 {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      margin-bottom: 12px;
+    }
+
+    .sec-lead {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+      max-width: 860px;
+    }
+
+    .apps .sec-head {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .apps .sec-lead {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 720px;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .app-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+      transition: box-shadow .2s, transform .2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .app-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+    }
+
+    .app-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .app-card-body {
+      padding: 18px 4px 4px 4px;
+    }
+
+    .app-card-body h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .app-card-body p {
+      font-size: 15px;
+      color: var(--txt);
+      line-height: 1.55;
+    }
+
+    .apps-cta {
+      text-align: center;
+      margin-top: 38px;
+    }
+
+    /* ─── SUPPORT ─── */
+    .support {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 60px;
+      align-items: stretch;
+    }
+
+    .support-left {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .support-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .support-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .support-right h2 {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      letter-spacing: -0.015em;
+    }
+
+    .support-lead {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+      max-width: 860px;
+      margin-bottom: 40px;
+    }
+
+    .support-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .s-card {
+      background: #F7FBF8;
+      border-radius: 6px;
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-top: 4px solid transparent;
+      box-shadow: none;
+    }
+
+    .s-card.featured {
+      border-top: 4px solid var(--green);
+    }
+
+    .s-card h3 {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 0;
+    }
+
+    .s-card ul {
+      list-style-type: disc;
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .s-card li {
+      font-size: 15px;
+      color: var(--txt);
+      line-height: 1.45;
+    }
+
+    .support-action {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    /* ─── HOW TO GET STARTED ─── */
+    .how {
+      background: var(--green-bg);
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .how-head {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .how-head .sec-h2 {
+      max-width: 900px;
+      margin: 0 auto 12px;
+    }
+
+    .how-lead {
+      font-size: 16px;
+      color: var(--txt);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+
+    .how-steps::before {
+      content: '';
+      position: absolute;
+      top: 17px;
+      left: calc(12.5% + 30px);
+      right: calc(12.5% + 30px);
+      height: 1px;
+      border-top: 2px dashed #b0cfba;
+      z-index: 0;
+    }
+
+    .how-step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-num {
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--green);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      font-style: normal;
+    }
+
+    .step-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #c8e6d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 22px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .step-circle img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .how-step h4 {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .how-step p {
+      font-size: 15px;
+      color: var(--txt);
+      line-height: 1.55;
+      padding: 0 12px;
+    }
+
+    .how-cta {
+      text-align: center;
+      margin-top: 52px;
+    }
+
+    /* ─── MARKET OPP ─── */
+    .market {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .market-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 38px;
+    }
+
+    .m-card {
+      background: #F7FBF8;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 35px 31px;
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+
+    .m-card:hover {
+      border-color: #CDEBDA;
+      box-shadow: 0px 60px 40px -7px #00000021;
+      transform: translateY(-4px);
+    }
+
+    .m-card h3 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .m-card p {
+      font-size: 18px;
+      color: var(--txt);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .market-cta {
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    /* Market section: center all header content */
+    .market>.C>.sec-eyebrow,
+    .market>.C>.sec-h2 {
+      text-align: center;
+    }
+
+    .market>.C>.sec-lead {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 720px;
+    }
+
+    /* ─── DEEPER RESOURCE ─── */
+    .deeper {
+      background: linear-gradient(rgba(0, 122, 51, 0.92), rgba(0, 122, 51, 0.92)), url('assets/img (2).png') no-repeat center center;
+      background-size: cover;
+      border-radius: 12px;
+      padding: 56px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      margin-top: 52px;
+    }
+
+    .deeper-text .e2 {
+      font-family: Lato;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .deeper-text h3 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      max-width: 900px;
+      margin-top: 12px;
+    }
+
+    .deeper-text p {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.6;
+      max-width: 900px;
+    }
+
+    .deeper-btn {
+      flex-shrink: 0;
+      background: #fff;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 0 28px;
+      height: 48px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: 'Lato', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.15s;
+    }
+
+    .deeper-btn:hover {
+      background: #f0f0f0;
+    }
+
+    /* ─── FAQ ─── */
+    .faq {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .faq .C {
+      display: grid;
+      grid-template-columns: 0.7fr 1.4fr;
+      gap: 120px;
+      align-items: flex-start;
+    }
+
+    .faq-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .faq-left h2 {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-top: 10px;
+    }
+
+    .faq-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 16px;
+    }
+
+    .faq-read {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid transparent;
+    }
+
+    .faq-read:hover {
+      border-bottom-color: var(--green);
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    details.fq {
+      background: #F7FBF8;
+      border: 1px solid #599b73;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    details.fq[open] {
+      background: #fff;
+    }
+
+    details.fq summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 26px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    details.fq summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .fq-icon {
+      font-size: 28px;
+      color: var(--green);
+      font-weight: 400;
+      line-height: 1;
+      margin-left: 12px;
+      flex-shrink: 0;
+      transition: color 0.2s;
+    }
+
+    details.fq[open] .fq-icon {
+      color: var(--green);
+    }
+
+    .fq-body {
+      padding: 0 26px 22px 26px;
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+    }
+
+    /* ─── FORM SECTION ─── */
+    .formsec {
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .formsec .C {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 72px;
+      align-items: flex-start;
+    }
+
+    .form-left h2 {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--ink);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+
+    .form-left p {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+      max-width: 500px;
+    }
+
+    .form-help {
+      margin-top: 28px;
+    }
+
+    .form-help h4 {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .form-help ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .form-help li {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.5;
+    }
+
+    .form-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 44px 48px;
+      box-shadow: 0 3px 22px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-card-title {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    .fg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .ff {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .ff.full {
+      grid-column: span 2;
+    }
+
+    .ff label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .ff input,
+    .ff select,
+    .ff textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 11px 14px;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: var(--ink);
+      background: #fff;
+      transition: border-color .2s;
+    }
+
+    .ff input:focus,
+    .ff select:focus,
+    .ff textarea:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(0, 122, 51, 0.08);
+    }
+
+    .ff textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .options-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .cb-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--txt);
+      cursor: pointer;
+      line-height: 1.4;
+    }
+
+    .cb-label input[type="checkbox"] {
+      width: auto;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+
+    .form-signin-wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-bottom: 12px;
+    }
+
+    .btn-signup {
+      align-self: flex-start;
+      margin-top: 16px;
+      background: var(--green);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 0 32px;
+      height: 48px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: 'Lato', sans-serif;
+      transition: background .15s;
+    }
+
+    .btn-signup:hover {
+      background: var(--green-dk);
+    }
+
+    .signin-text {
+      font-size: 14px;
+      color: #111;
+    }
+
+    .signin-link {
+      color: var(--green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .signin-link:hover {
+      text-decoration: underline;
+    }
+
+    /* ─── SIGNUP SECTION ─── */
+    .signup {
+      background: var(--green-bg);
+      border-top: 1px solid var(--border);
+      padding: 72px 0;
+    }
+
+    .signup .C {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 68px;
+      align-items: flex-start;
+    }
+
+    .su-left h3 {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .su-left>p {
+      font-size: 16px;
+      color: var(--txt);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .su-left ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .su-left li {
+      font-size: 15px;
+      color: var(--txt);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.45;
+    }
+
+    .su-left li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .su-contact {
+      margin-top: 22px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .su-contact a {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .su-right h3 {
+      font-size: 21px;
+      font-weight: 900;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .su-form {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .su-form input,
+    .su-form select,
+    .su-form textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 11px 14px;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .su-form input:focus,
+    .su-form select:focus,
+    .su-form textarea:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+
+    .su-form textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .su-consent {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .su-form button {
+      height: 48px;
+      background: var(--green);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .su-form button:hover {
+      background: var(--green-dk);
+    }
+
+    .su-note {
+      font-size: 13.5px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .su-note a {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      :root {
+        --px: 30px;
+      }
+
+      .hero .C,
+      .why .C,
+      .support-grid,
+      .formsec .C,
+      .signup .C,
+      .faq .C {
+        grid-template-columns: 1fr;
+      }
+
+      .support-cards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .how-steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .how-steps::before {
+        display: none;
+      }
+
+      .market-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pband-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 32px 24px;
+      }
+
+      .deeper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+      }
+
+      .form-card {
+        padding: 36px;
+      }
+
+      /* Responsive Typography */
+      .hero h1,
+      .why h2,
+      .sec-h2,
+      .support-right h2 {
+        font-size: 48px;
+      }
+
+      .why-pt-body h4,
+      .m-card h3 {
+        font-size: 24px;
+      }
+
+      .deeper-text h3 {
+        font-size: 26px;
+      }
+
+      .faq-left h2,
+      .form-left h2 {
+        font-size: 30px;
+      }
+
+      .why-pt-body p,
+      .m-card p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+      }
+
+      /* Spacing overrides for collapsed grid */
+      .faq .C,
+      .formsec .C {
+        gap: 40px;
+      }
+
+      .support-img {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --px: 16px;
+      }
+
+      .apps-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .market-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .ubar {
+        display: none;
+      }
+
+      /* Mobile Spacing & Typography */
+      .hero h1,
+      .why h2,
+      .sec-h2,
+      .support-right h2 {
+        font-size: 38px;
+      }
+
+      .why-pt-body h4,
+      .m-card h3 {
+        font-size: 20px;
+      }
+
+      .deeper-text h3 {
+        font-size: 22px;
+      }
+
+      .faq-left h2,
+      .form-left h2 {
+        font-size: 24px;
+      }
+
+      .hero-lead {
+        font-size: 15px;
+      }
+
+      .why-pt-body p,
+      .m-card p {
+        font-size: 15px;
+      }
+
+      .hero {
+        padding: 48px 0 40px;
+      }
+
+      .why,
+      .apps,
+      .support,
+      .how,
+      .market,
+      .faq,
+      .formsec {
+        padding: 48px 0;
+      }
+
+      .deeper {
+        padding: 32px 24px;
+      }
+
+      .form-card {
+        padding: 24px 20px;
+      }
+
+      .m-card {
+        padding: 24px 20px;
+      }
+
+      .support-img {
+        height: 250px;
+      }
+
+      .hero-img {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .apps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fg {
+        grid-template-columns: 1fr;
+      }
+
+      .ff.full,
+      .form-submit {
+        grid-column: span 1;
+      }
+
+      .how-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      /* Why points column stacking on mobile */
+      .why-pt {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+      }
+
+      .why-n {
+        width: 100px;
+        height: 100px;
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-cta {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+
+      .logo-name {
+        font-size: 16px;
+      }
+
+      .logo-box {
+        width: 32px;
+        height: 32px;
+      }
+
+      .logo-box svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── UTILITY BAR ── -->
+  <div class="ubar">
+    <div class="C">
+      <div class="ubar-l">
+        <a href="#">Dealer Login</a>
+        <a href="#">Find a Dealer</a>
+        <a href="#">Projects</a>
+        <a href="#">News</a>
+      </div>
+      <div class="ubar-r">
+        <span class="ubar-phone">1-800-555-0190</span>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <header class="nav">
+    <div class="C">
+      <a class="logo" href="#">
+        <div class="logo-box">
+          <svg viewBox="0 0 20 20">
+            <path
+              d="M10 2C5.5 2 2 5.5 2 10s3.5 8 8 8 8-3.5 8-8-3.5-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"
+              fill="#fff" />
+            <path d="M10 6C7.8 6 6 7.8 6 10s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z" fill="#fff" />
+          </svg>
+        </div>
+        <div>
+          <div class="logo-name">FieldTurf</div>
+          <div class="logo-sub">Landscape</div>
+        </div>
+      </a>
+      <div class="navlinks">
+        <span>Turf Products</span>
+        <span>Applications</span>
+        <span>Support</span>
+        <span>Resources</span>
+        <span>About Us</span>
+      </div>
+      <a href="#form" class="nav-cta btn-g">Talk to Our Turf Team</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="C">
+        <div class="hero-text">
+          <div class="hero-eyebrow">For Contractors and Outdoor Building Pros</div>
+          <h1>Better Turf.<br>Bigger Story.<br>More Jobs Won.</h1>
+          <p class="hero-lead">FieldTurf Landscape gives contractors premium turf products, application-specific
+            guidance, and a product story that helps you win jobs where price is not the only conversation.</p>
+          <div class="hero-check">
+            <span class="hero-check-dot">&#10003;</span>
+            <span>Start with one project. No dealer commitment required.</span>
+          </div>
+          <div class="hero-btns">
+            <a href="#form" class="btn-g">Get Turf for Your Business</a>
+            <a href="#how" class="btn-o">See How It Works</a>
+          </div>
+        </div>
+        <div>
+          <img src="assets/img (1).png" alt="Premium turf installation" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECT BAND ── -->
+    <section class="pband">
+      <div class="C">
+        <div class="pband-card">
+          <div>
+            <h3>Have a Turf Project? We Can Help.</h3>
+            <p>Whether you are quoting a backyard for a residential client or adding turf to a commercial build, our
+              team
+              can help you find the right product and get you moving. No dealer commitment required to start the
+              conversation.</p>
+          </div>
+          <a href="#form" class="btn-g" style="flex-shrink:0;">Get Turf for Your Business</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY FIELDTURF ── -->
+    <section class="why" id="why">
+      <div class="C">
+        <!-- LEFT: heading + image -->
+        <div class="why-left">
+          <div class="why-eyebrow">Why FieldTurf Landscape</div>
+          <h2>Stop Selling on Price. Start Selling on Quality.</h2>
+          <p class="why-desc">Cheap turf makes every quote about price. FieldTurf Landscape gives contractors a premium
+            product story backed by performance heritage, product testing, application knowledge, manufacturing
+            experience, and support that helps you close more work with confidence.</p>
+          <img src="assets/img (2).png" alt="Contractor installing FieldTurf" class="why-img">
+        </div>
+        <!-- RIGHT: numbered points -->
+        <div class="why-points">
+          <div class="why-pt">
+            <div class="why-n">01</div>
+            <div class="why-pt-body">
+              <h4>Your Customers Have Heard of FieldTurf</h4>
+              <p>FieldTurf is a recognized name built around performance. When customers compare turf options, having a
+                known brand behind your recommendation carries more weight than an unknown supplier. It also gives you
+                something real to talk about beyond price.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-n">02</div>
+            <div class="why-pt-body">
+              <h4>Built on Sports. Proven Beyond the Field.</h4>
+              <p>FieldTurf's roots are in high-performance sports surfaces trusted across professional, collegiate, and
+                community programs. That same performance mindset carries into every landscape turf system, giving
+                contractors a credibility point that no-name suppliers simply cannot match.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-n">03</div>
+            <div class="why-pt-body">
+              <h4>Your Customer Had Answers When Customers Ask Why It Costs More</h4>
+              <p>Drainage performance, durability ratings, safety testing, and application-specific product selection
+                give you actual talking points. You are not just saying it is better turf. You can explain why.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-n">04</div>
+            <div class="why-pt-body">
+              <h4>One Supplier. Every Application Your Customers Ask About.</h4>
+              <p>Yards, pet areas, playgrounds, putting greens, rooftops, commercial spaces, and specialty projects.
+                FieldTurf Landscape helps you match the right turf system to the job instead of putting one product into
+                everything you install.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-n">05</div>
+            <div class="why-pt-body">
+              <h4>U.S.-Made. Vertically Integrated. Consistently What You Ordered.</h4>
+              <p>U.S.-based manufacturing and vertically integrated production support product consistency, quality
+                control, and ongoing innovation. You install it and your name is on it. Knowing what is in the product
+                matters.</p>
+            </div>
+          </div>
+          <div class="why-pt">
+            <div class="why-n">06</div>
+            <div class="why-pt-body">
+              <h4>Support That Helps You Win the Conversation</h4>
+              <p>Product guidance before you quote. Sales tools to use with customers. Resources to help you answer
+                questions and present a stronger turf offering. FieldTurf Landscape supports you before and after the
+                sale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCT APPLICATIONS ── -->
+    <section class="apps" id="applications">
+      <div class="C">
+        <div class="sec-head">
+          <div class="sec-eyebrow">Product Applications</div>
+          <h2 class="sec-h2">The Right Turf for Every Job You Quote</h2>
+          <p class="sec-lead">Whether you are quoting a backyard, pet area, putting green, playground, rooftop, or
+            commercial space, FieldTurf Landscape helps you choose turf products that are built for the application.</p>
+        </div>
+        <div class="apps-grid">
+          <div class="app-card">
+            <img src="assets/img (7).jpg" alt="Residential Yards">
+            <div class="app-card-body">
+              <h3>Residential Yards</h3>
+              <p>Low-maintenance turf options for clean, usable outdoor spaces that customers actually enjoy.</p>
+            </div>
+          </div>
+          <div class="app-card">
+            <img src="assets/img (6).jpg" alt="Pet Turf">
+            <div class="app-card-body">
+              <h3>Pet Turf</h3>
+              <p>Turf options built for pet areas where drainage, cleanability, and durability matter.</p>
+            </div>
+          </div>
+          <div class="app-card">
+            <img src="assets/img (5).jpg" alt="Playgrounds">
+            <div class="app-card-body">
+              <h3>Playgrounds</h3>
+              <p>Turf systems for play spaces where safety, impact attenuation, and long-term performance are
+                non-negotiable.</p>
+            </div>
+          </div>
+          <div class="app-card">
+            <img src="assets/img (1).png" alt="Putting Greens">
+            <div class="app-card-body">
+              <h3>Putting Greens</h3>
+              <p>Putting green turf for residential and commercial golf spaces, from backyard installs to full
+                commercial builds.</p>
+            </div>
+          </div>
+          <div class="app-card">
+            <img src="assets/img (3).jpg" alt="Commercial Landscape">
+            <div class="app-card-body">
+              <h3>Commercial Landscape</h3>
+              <p>Durable, professional turf solutions for commercial properties where appearance and low maintenance are
+                the priority.</p>
+            </div>
+          </div>
+          <div class="app-card">
+            <img src="assets/img (2).jpg" alt="Specialty Applications">
+            <div class="app-card-body">
+              <h3>Specialty Applications</h3>
+              <p>Turf options for rooftops, patios, events, athletic areas, and other spaces that need a product built
+                for the environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="apps-cta">
+          <a href="#form" class="btn-g">Find the Right Turf for Your Jobs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SUPPORT ── -->
+    <section class="support" id="support">
+      <div class="C support-grid">
+        <!-- Left Column: Image -->
+        <div class="support-left">
+          <img src="assets/img (1).jpg" alt="FieldTurf support team" class="support-img">
+        </div>
+        <!-- Right Column: Content -->
+        <div class="support-right">
+          <div class="sec-eyebrow">Support for Contractors</div>
+          <h2>Support That Helps You Quote, Sell, and Deliver</h2>
+          <p class="support-lead">FieldTurf Landscape helps contractors choose the right products, explain premium
+            value, and back better turf projects from the first customer conversation through installation.</p>
+
+          <div class="support-cards-grid">
+            <div class="s-card">
+              <h3>Product Guidance</h3>
+              <ul>
+                <li>Application-based product recommendations</li>
+                <li>Guidance before you quote</li>
+                <li>Help answering customer product questions</li>
+              </ul>
+            </div>
+            <div class="s-card featured">
+              <h3>Sales Support</h3>
+              <ul>
+                <li>Talking points on drainage, durability, safety, and product fit</li>
+                <li>Customer-facing materials to support the sale</li>
+                <li>Help positioning premium turf over cheaper alternatives</li>
+              </ul>
+            </div>
+            <div class="s-card">
+              <h3>Business Support</h3>
+              <ul>
+                <li>Training resources for your team</li>
+                <li>Co-branded materials where available</li>
+                <li>Ongoing support as you expand turf services</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="support-action">
+            <a href="#form" class="btn-g">Talk to Our Turf Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW TO GET STARTED ── -->
+    <section class="how" id="how">
+      <div class="C">
+        <div class="how-head">
+          <div class="sec-eyebrow" style="text-align:center;">How to Get Started</div>
+          <h2 class="sec-h2" style="text-align:center;">Start With One Project.<br>Grow From There.</h2>
+          <p class="how-lead">You do not need a dealer commitment to start the conversation. Tell us what you need and
+            our team will help you find the right next step.</p>
+        </div>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="step-num">01</div>
+            <div class="step-circle">
+              <img src="assets/Group 2.png" alt="Step 1">
+            </div>
+            <h4>Tell Us What You Need</h4>
+            <p>Share details about your project, service area, or turf goals. One job or long-term growth, both are a
+              fine place to start.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">02</div>
+            <div class="step-circle">
+              <img src="assets/Group 2.png" alt="Step 2">
+            </div>
+            <h4>Talk With Our Turf Team</h4>
+            <p>We learn what you are working on and help identify the best product options for the application and your
+              customer's expectations.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">03</div>
+            <div class="step-circle">
+              <img src="assets/Group 2.png" alt="Step 3">
+            </div>
+            <h4>Choose the Right Product</h4>
+            <p>Get clear guidance on turf products that fit the job, the install conditions, and what the customer needs
+              long-term.</p>
+          </div>
+          <div class="how-step">
+            <div class="step-num">04</div>
+            <div class="step-circle">
+              <img src="assets/Group 2.png" alt="Step 4">
+            </div>
+            <h4>Buy Turf With Support</h4>
+            <p>Move forward with product support before, during, and after the sale. Whether this is your first turf job
+              or your fiftieth.</p>
+          </div>
+        </div>
+        <div class="how-cta">
+          <a href="#form" class="btn-g">Talk to Our Turf Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MARKET OPPORTUNITY ── -->
+    <section class="market" id="market">
+      <div class="C">
+        <div class="sec-eyebrow">Market Opportunity</div>
+        <h2 class="sec-h2">Turf Is No Longer a Niche Request</h2>
+        <p class="sec-lead">More customers are asking for low-maintenance, usable outdoor spaces. For contractors
+          already building yards, pet areas, putting greens, playgrounds, and commercial landscapes, turf is a natural
+          service to add or grow.</p>
+        <div class="market-cards">
+          <div class="m-card">
+            <h3>More Customers Are Asking for Turf</h3>
+            <p>Artificial turf is showing up in more residential, commercial, recreation, and specialty applications.
+              Homeowners and facility managers are often the ones bringing it up first.</p>
+          </div>
+          <div class="m-card">
+            <h3>It Is Not Just Lawns Anymore</h3>
+            <p>Customers ask about pet spaces, play areas, putting greens, rooftops, patios, and commercial landscapes.
+              Contractors who can say yes to more of those conversations win more work.</p>
+          </div>
+          <div class="m-card">
+            <h3>The Contractors Winning Are Selling Premium</h3>
+            <p>As more suppliers enter the market, the contractors holding margin are the ones with a stronger product
+              story. A recognized brand and real performance proof points change the conversation.</p>
+          </div>
+        </div>
+        <div class="market-cta">
+          <a href="#form" class="btn-g">Talk to Our Turf Team</a>
+        </div>
+        <!-- DEEPER RESOURCE -->
+        <div class="deeper">
+          <div class="deeper-text">
+            <span class="e2">Deeper Resource</span>
+            <h3>The outdoor spaces contractors already build are the ones customers want in turf.</h3>
+            <p>Artificial turf is expanding across the landscape applications contractors already work in. See the
+              market trends, application growth, and customer demand behind the opportunity.</p>
+          </div>
+          <button class="deeper-btn">See the Artificial Turf Market Opportunity</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="faq" id="faq">
+      <div class="C">
+        <div class="faq-left">
+          <div class="sec-eyebrow">FAQ</div>
+          <h2>Good Questions. Straight<br>Answers.</h2>
+        </div>
+        <div class="faq-right">
+          <div class="faq-list">
+            <details class="fq">
+              <summary>Can I buy turf directly from FieldTurf Landscape? <span class="fq-icon">+</span></summary>
+              <div class="fq-body">Yes. If you build, quote, or install outdoor spaces, this page is for you. Hardscape
+                contractors, turf installers, outdoor living pros, lawn care companies adding turf services, and anyone
+                else who builds outdoor spaces professionally is welcome to reach out about buying turf products.</div>
+            </details>
+            <details class="fq">
+              <summary>What is the average size for a putting green? <span class="fq-icon">+</span></summary>
+              <div class="fq-body">Putting green sizes vary widely based on the space and customer goals, but
+                residential
+                putting greens typically range from 200 to 600 square feet. Our team can help you spec the right product
+                for the application and your customer's budget.</div>
+            </details>
+            <details class="fq" open>
+              <summary>Will I need to cover my putting green in the winter? <span class="fq-icon">&minus;</span>
+              </summary>
+              <div class="fq-body">Our highly versatile turf is designed to last year-round and withstand the weather.
+                Not
+                only will you not have to cover it, but it will maintain its same perfect green color. You might even be
+                able to bundle up and get some putting done in the winter months.</div>
+            </details>
+            <details class="fq">
+              <summary>Will hitting golf balls damage my putting green? <span class="fq-icon">+</span></summary>
+              <div class="fq-body">Our putting green turf is engineered to handle repeated golf ball impact. Products
+                are
+                selected based on the intensity of use. For high-traffic practice areas, our team can help identify the
+                right product specification.</div>
+            </details>
+            <details class="fq">
+              <summary>How much does it cost to install a custom putting green? <span class="fq-icon">+</span></summary>
+              <div class="fq-body">Installation costs vary by size, base preparation, and product selection. Talking
+                with
+                our team about your specific project will give you a clearer picture of what to expect for your
+                application.</div>
+            </details>
+          </div>
+          <div class="faq-footer">
+            <a href="#" class="faq-read">READ MORE &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FORM SECTION ── -->
+    <section class="formsec" id="form">
+      <div class="C">
+        <div class="form-left">
+          <h2>Tell Us About Your Turf Project</h2>
+          <p>Whether you need turf for a current job or want to add turf to your services, our team will help you find
+            the right product and next step.</p>
+          <div class="form-help">
+            <h4>We can help with:</h4>
+            <ul>
+              <li>Current projects that need turf</li>
+              <li>Product selection and application guidance</li>
+              <li>Contractors adding turf to their services for the first time</li>
+              <li>Existing turf installers looking for a stronger supplier</li>
+              <li>Businesses that build outdoor spaces and want to offer turf</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-card">
+          <h3 class="form-card-title">Sign Up</h3>
+          <form>
+            <div class="fg">
+              <div class="ff">
+                <label><span style="color:red;">*</span>Name:</label>
+                <input type="text" placeholder="Enter name" required>
+              </div>
+              <div class="ff">
+                <label><span style="color:red;">*</span>Phone:</label>
+                <input type="tel" placeholder="Enter phone" required>
+              </div>
+              <div class="ff">
+                <label><span style="color:red;">*</span>Email:</label>
+                <input type="email" placeholder="Enter email" required>
+              </div>
+              <div class="ff">
+                <label>Business Name:</label>
+                <input type="text" placeholder="Enter business name">
+              </div>
+              <div class="ff">
+                <label><span style="color:red;">*</span>Business Address:</label>
+                <input type="text" placeholder="Enter address" required>
+              </div>
+              <div class="ff">
+                <label><span style="color:red;">*</span>Zip Code:</label>
+                <input type="text" placeholder="Enter zip" required>
+              </div>
+              <div class="ff full">
+                <label>Tell us about your business:</label>
+                <textarea placeholder="Type here..."></textarea>
+              </div>
+
+              <div class="form-options">
+                <p class="options-title">What type of turf business opportunity interests you? (check all that apply)
+                </p>
+                <label class="cb-label">
+                  <input type="checkbox">
+                  <span>I want to sell and install turf in my market</span>
+                </label>
+                <label class="cb-label">
+                  <input type="checkbox">
+                  <span>I'd like to distribute turf and sell to local contractors</span>
+                </label>
+                <label class="cb-label">
+                  <input type="checkbox">
+                  <span>I am currently in the turf business and want to partner with a manufacturer</span>
+                </label>
+                <button type="submit" class="btn-signup">Sign Up</button>
+              </div>
+
+              <div class="form-signin-wrapper">
+                <span class="signin-text">Already a partner? <a href="#" class="signin-link">Sign In</a></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // FAQ icon toggle
+    document.querySelectorAll('.fq').forEach(el => {
+      el.addEventListener('toggle', () => {
+        const icon = el.querySelector('.fq-icon');
+        if (icon) icon.innerHTML = el.open ? '&minus;' : '+';
+      });
+    });
+  </script>
+
+</body>
+
+</html>
