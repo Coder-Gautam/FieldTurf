@@ -330,6 +330,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 40px;
+      border: 1px solid var(--Light-green, #F0F7F3);
     }
 
     .pband-card h3 {
@@ -360,7 +361,9 @@
       align-items: flex-start;
     }
 
-    .why-left {}
+    .why-left {
+      height: 100%;
+    }
 
     .why-eyebrow {
       font-size: 18px;
@@ -391,6 +394,8 @@
       width: 100%;
       object-fit: cover;
       border-radius: 5px;
+      position: sticky;
+      top: 120px;
     }
 
     .why-points {}
@@ -406,7 +411,7 @@
       width: 110px;
       height: 110px;
       border-radius: 50%;
-      background: #F7FBF8;
+      background: #F2F9F4;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -512,16 +517,16 @@
     }
 
     .app-card-body h3 {
-      font-size: 20px;
+      font-size: 28px;
       font-weight: 800;
       color: var(--ink);
       margin-bottom: 10px;
     }
 
     .app-card-body p {
-      font-size: 15px;
+      font-size: 18px;
       color: var(--txt);
-      line-height: 1.55;
+      line-height: 36px;
     }
 
     .apps-cta {
@@ -680,23 +685,24 @@
       font-weight: 900;
       color: var(--green);
       letter-spacing: 0.05em;
-      margin-bottom: 16px;
       font-style: normal;
+      background: #f7fbf8;
+      width: 100px;
+      margin: 0 auto 16px;
     }
 
     .step-circle {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       background: #fff;
-      border: 2px solid #c8e6d0;
+      border: 1px solid #c8e6d0;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 auto 22px;
       position: relative;
       z-index: 2;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     .step-circle img {
@@ -791,7 +797,7 @@
       background: linear-gradient(rgba(0, 122, 51, 0.92), rgba(0, 122, 51, 0.92)), url('assets/img (2).png') no-repeat center center;
       background-size: cover;
       border-radius: 12px;
-      padding: 56px 60px;
+      padding: 30px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -810,7 +816,7 @@
     }
 
     .deeper-text h3 {
-      font-size: 42px;
+      font-size: 40px;
       font-weight: 700;
       color: #fff;
       line-height: 1.25;
