@@ -206,7 +206,7 @@
     .btn-light {
       background: #fff;
       color: var(--green);
-      border-color: #white;
+      border-color: #fff;
     }
 
     .btn-light:hover {
@@ -874,6 +874,21 @@
     @media (max-width: 1024px) {
       :root {
         --px: 30px;
+      }
+
+      /* Force all desktop animations (fade-left, fade-right, zoom-in) to behave as fade-up on tablet & mobile */
+      [data-aos='fade-left'],
+      [data-aos='fade-right'],
+      [data-aos='zoom-in'] {
+        transform: translate3d(0, 40px, 0) !important;
+        opacity: 0 !important;
+      }
+
+      [data-aos='fade-left'].aos-animate,
+      [data-aos='fade-right'].aos-animate,
+      [data-aos='zoom-in'].aos-animate {
+        transform: translate3d(0, 0, 0) !important;
+        opacity: 1 !important;
       }
 
       .section {

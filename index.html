@@ -761,6 +761,39 @@
       transform: translateY(-4px);
     }
 
+    .m-card-icon {
+      width: 72px;
+      height: 72px;
+      background: #ffffff;
+      border: 2px solid #E2F2E9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 4px 12px rgba(0, 122, 51, 0.04);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .m-card-icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--green);
+      stroke-width: 2;
+      transition: all 0.3s ease;
+    }
+
+    .m-card:hover .m-card-icon {
+      background: var(--green);
+      border-color: var(--green);
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 122, 51, 0.2);
+    }
+
+    .m-card:hover .m-card-icon svg {
+      stroke: #ffffff;
+    }
+
     .m-card h3 {
       font-size: 28px;
       font-weight: 800;
@@ -1293,6 +1326,21 @@
         --px: 30px;
       }
 
+      /* Force all desktop animations (fade-left, fade-right, zoom-in) to behave as fade-up on tablet & mobile */
+      [data-aos='fade-left'],
+      [data-aos='fade-right'],
+      [data-aos='zoom-in'] {
+        transform: translate3d(0, 40px, 0) !important;
+        opacity: 0 !important;
+      }
+
+      [data-aos='fade-left'].aos-animate,
+      [data-aos='fade-right'].aos-animate,
+      [data-aos='zoom-in'].aos-animate {
+        transform: translate3d(0, 0, 0) !important;
+        opacity: 1 !important;
+      }
+
       .hero .C,
       .why .C,
       .support-grid,
@@ -1738,13 +1786,11 @@
     </section>
 
     <!-- ── SUPPORT ── -->
-    <section class="support" id="support">
+    <!-- <section class="support" id="support">
       <div class="C support-grid">
-        <!-- Left Column: Image -->
         <div class="support-left" data-aos="fade-right">
           <img src="assets/img (1).jpg" alt="FieldTurf support team" class="support-img">
         </div>
-        <!-- Right Column: Content -->
         <div class="support-right" data-aos="fade-left">
           <div class="sec-eyebrow">SUPPORT + HOW TO GET STARTED</div>
           <h2>Support That Helps You Quote, Sell, Deliver, and Get Started</h2>
@@ -1783,7 +1829,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ── HOW TO GET STARTED ── -->
     <section class="how" id="how">
@@ -1842,25 +1888,46 @@
     <section class="market" id="market">
       <div class="C" data-aos="fade-up">
         <div class="sec-eyebrow">Market Opportunity</div>
-        <h2 class="sec-h2">Turf Is No Longer a Niche Request</h2>
+        <h2 class="sec-h2">Turf Is a Growing Opportunity for Contractors</h2>
         <p class="sec-lead">More customers are asking for low-maintenance, usable outdoor spaces. For contractors
           already building yards, pet areas, putting greens, playgrounds, and commercial landscapes, turf can be a
           natural service to add or expand.</p>
         <div class="market-cards">
           <div class="m-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="m-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                <polyline points="16 7 22 7 22 13"></polyline>
+              </svg>
+            </div>
             <h3>Customer Demand Is Growing</h3>
-            <p>Artificial turf is showing up in more residential, commercial, recreation, and specialty applications.
-              Homeowners and facility managers are often the ones bringing it up first.</p>
+            <!-- <p>Artificial turf is showing up in more residential, commercial, recreation, and specialty applications.
+              Homeowners and facility managers are often the ones bringing it up first.</p> -->
           </div>
           <div class="m-card" data-aos="fade-up" data-aos-delay="100">
-            <h3>More Applications Mean More Opportunities</h3>
-            <p>Customers ask about pet spaces, play areas, putting greens, rooftops, patios, and commercial landscapes.
-              Contractors who can say yes to more of those conversations win more work.</p>
+            <div class="m-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.8a7 7 0 0 1-9 8.2z"></path>
+                <path d="M9 22v-4"></path>
+              </svg>
+            </div>
+            <h3>Turf Fits More Outdoor Spaces</h3>
+            <!-- <p>Customers ask about pet spaces, play areas, putting greens, rooftops, patios, and commercial landscapes.
+              Contractors who can say yes to more of those conversations win more work.</p> -->
           </div>
           <div class="m-card" data-aos="fade-up" data-aos-delay="200">
-            <h3>A Better Product Story Helps You Win</h3>
-            <p>As more suppliers enter the market, the contractors holding margin are the ones with a stronger product
-              story. A recognized brand and real performance proof points change the conversation.</p>
+            <div class="m-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v5Z"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path>
+              </svg>
+            </div>
+            <h3>Contractors Are Already in the Conversation</h3>
+            <!-- <p>As more suppliers enter the market, the contractors holding margin are the ones with a stronger product
+              story. A recognized brand and real performance proof points change the conversation.</p> -->
           </div>
         </div>
         <div class="market-cta">
