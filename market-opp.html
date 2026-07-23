@@ -259,6 +259,13 @@
       margin-top: 28px;
     }
 
+    .takeaway-wrapper {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     /* Cards */
     .card {
       background: #fff;
@@ -504,7 +511,7 @@
     /* Stats and callouts */
     .market-grid {
       display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
+      grid-template-columns: 0.70fr 1.30fr;
       gap: 50px;
       align-items: start;
     }
@@ -699,7 +706,7 @@
       justify-content: center;
     }
 
-    .app-grid > div:first-child {
+    .app-grid>div:first-child {
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -822,7 +829,7 @@
       box-shadow: var(--shadow);
       object-fit: cover;
       height: 380px;
-      object-position: 0 30%;
+      object-position: 0 0%;
     }
 
     /* Comparison */
@@ -1005,8 +1012,7 @@
       }
 
       .cta-band {
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 30px;
         gap: 20px;
       }
@@ -1097,6 +1103,16 @@
 
       h2 {
         font-size: 40px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .takeaway-wrapper {
+        flex-direction: column;
+      }
+
+      .cta-band {
+        flex-direction: column;
       }
     }
 
@@ -1210,7 +1226,8 @@
               water-conscious landscaping, heavier yard use, pet-friendly surfaces, outdoor living upgrades, and
               commercial properties that need consistent curb appeal year-round.</p>
             <p class="sub">Not every customer needs turf. But the data shows turf increasingly solving a real problem in
-              spaces where natural grass struggles, where customers want less upkeep, or where a property needs a cleaner
+              spaces where natural grass struggles, where customers want less upkeep, or where a property needs a
+              cleaner
               finished look.</p>
           </div>
           <div class="market-stat-grid" data-aos="fade-left">
@@ -1256,16 +1273,19 @@
             </div>
           </div>
         </div>
-        <div class="takeaway" data-aos="fade-up">
-          <h3>What this means for contractors</h3>
-          <p class="small">Turf demand is not tied to one customer type or one project. It shows up across outdoor
-            living, pet, play, golf, commercial, rooftop, and low-maintenance conversations, which means more than one
-            way it can appear in work contractors already quote.</p>
+        <div class="takeaway-wrapper">
+          <div class="takeaway" data-aos="fade-up">
+            <h3>What this means for contractors</h3>
+            <p class="small">Turf demand is not tied to one customer type or one project. It shows up across outdoor
+              living, pet, play, golf, commercial, rooftop, and low-maintenance conversations, which means more than one
+              way it can appear in work contractors already quote.</p>
+          </div>
+          <p class="stat-note">Source note: Grand View Research and EPA WaterSense. EPA WaterSense reports nearly 9
+            billion gallons
+            per day in U.S. residential outdoor water use, primarily for landscape irrigation. Per-household estimate is
+            calculated using U.S. household counts and is included as broader irrigation and water-saving context, not
+            as a direct artificial turf savings claim.</p>
         </div>
-        <p class="stat-note">Source note: Grand View Research and EPA WaterSense. EPA WaterSense reports nearly 9 billion gallons
-          per day in U.S. residential outdoor water use, primarily for landscape irrigation. Per-household estimate is
-          calculated using U.S. household counts and is included as broader irrigation and water-saving context, not
-          as a direct artificial turf savings claim.</p>
       </div>
     </section>
 
@@ -1371,7 +1391,8 @@
         <div class="section-head single" data-aos="fade-up">
           <span class="eyebrow">Contractor Market Context</span>
           <h2>The Opportunity Connects to Markets Contractors Already Know</h2>
-          <p class="sub">The turf opportunity gets stronger next to the landscaping, outdoor living, and pet-care markets contractors
+          <p class="sub">The turf opportunity gets stronger next to the landscaping, outdoor living, and pet-care
+            markets contractors
             already work in. These aren’t abstract trends. They’re the same conversations already happening with
             homeowners and property owners.</p>
         </div>
@@ -1397,18 +1418,22 @@
             <div class="icon">🐾</div>
             <h4>Pet-Friendly Demand</h4>
             <div class="stat-num">56.3M</div>
-            <p>U.S. households that own a dog, according to AVMA. Pet areas are a recurring turf opportunity where mud, wear, drainage, and cleanability matter.</p>
+            <p>U.S. households that own a dog, according to AVMA. Pet areas are a recurring turf opportunity where mud,
+              wear, drainage, and cleanability matter.</p>
             <p class="source-tag">Source: <a
                 href="https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics">AVMA</a></p>
           </div>
         </div>
-        <div class="takeaway" data-aos="fade-up">
-          <h3>Contractor takeaway</h3>
-          <p class="small">Turf tends to work best introduced inside a broader conversation, not pitched as its own
-            category. Landscaping, outdoor living, pool, pet, and commercial property projects already give customers a
-            reason to improve the space.</p>
+        <div class="takeaway-wrapper">
+          <div class="takeaway" data-aos="fade-up">
+            <h3>Contractor takeaway</h3>
+            <p class="small">Turf tends to work best introduced inside a broader conversation, not pitched as its own
+              category. Landscaping, outdoor living, pool, pet, and commercial property projects already give customers
+              a
+              reason to improve the space.</p>
+          </div>
+          <p class="stat-note">Source note: NALP / IBISWorld, NAHB, Eye on Housing, and AVMA.</p>
         </div>
-        <p class="stat-note">Source note: NALP / IBISWorld, NAHB, Eye on Housing, and AVMA.</p>
       </div>
     </section>
 
@@ -1457,45 +1482,53 @@
           <span class="eyebrow">Applications and Contractor Fit</span>
           <h2>The Market Is Bigger Than Backyard Lawns</h2>
           <p class="sub">The same project types many contractors already quote are where turf demand keeps showing up:
-            residential, commercial, pet, play, golf, and outdoor living. Each application has different performance needs,
-            which is where product selection, drainage, base prep, infill, and wear patterns matter, rather than treating
+            residential, commercial, pet, play, golf, and outdoor living. Each application has different performance
+            needs,
+            which is where product selection, drainage, base prep, infill, and wear patterns matter, rather than
+            treating
             turf as one product for every job.</p>
         </div>
         <div class="apps" data-aos="fade-up">
           <div class="card app-card" data-aos="fade-up" data-aos-delay="0"><img src="assets/img (7).jpg"
               alt="Residential Lawns & Outdoor Living">
             <h3>Residential Lawns & Outdoor Living</h3>
-            <p class="small">Backyards, side yards, shaded areas, patios, and low-maintenance lawn alternatives where customers want
+            <p class="small">Backyards, side yards, shaded areas, patios, and low-maintenance lawn alternatives where
+              customers want
               a cleaner, more usable outdoor space.</p>
           </div>
           <div class="card app-card" data-aos="fade-up" data-aos-delay="100"><img src="assets/img (6).jpg"
               alt="Pet Areas">
             <h3>Pet Areas</h3>
-            <p class="small">Residential dog areas, pet runs, kennels, and pet-focused commercial spaces where drainage, cleanability,
+            <p class="small">Residential dog areas, pet runs, kennels, and pet-focused commercial spaces where drainage,
+              cleanability,
               and durability matter.</p>
           </div>
           <div class="card app-card" data-aos="fade-up" data-aos-delay="200"><img src="assets/img (4).jpg"
               alt="Poolside, Patios & Courtyards">
             <h3>Poolside, Patios & Courtyards</h3>
-            <p class="small">Pool surrounds, patios, rooftops, courtyards, and lounge areas where turf softens hard surfaces and finishes
+            <p class="small">Pool surrounds, patios, rooftops, courtyards, and lounge areas where turf softens hard
+              surfaces and finishes
               the space.</p>
           </div>
           <div class="card app-card" data-aos="fade-up" data-aos-delay="0"><img src="assets/img (1).png"
               alt="Putting Greens & Specialty Spaces">
             <h3>Putting Greens & Specialty Spaces</h3>
-            <p class="small">Backyard putting greens, hospitality amenities, and specialty areas that turn unused space into a standout
+            <p class="small">Backyard putting greens, hospitality amenities, and specialty areas that turn unused space
+              into a standout
               feature.</p>
           </div>
           <div class="card app-card" data-aos="fade-up" data-aos-delay="100"><img src="assets/img (5).jpg"
               alt="Playgrounds & Recreation">
             <h3>Playgrounds & Recreation</h3>
-            <p class="small">Play spaces, parks, schools, and childcare centers where the surface system, pad, drainage, and installation
+            <p class="small">Play spaces, parks, schools, and childcare centers where the surface system, pad, drainage,
+              and installation
               details matter.</p>
           </div>
           <div class="card app-card" data-aos="fade-up" data-aos-delay="200"><img src="assets/img (3).jpg"
               alt="Commercial & Multi-Family Landscapes">
             <h3>Commercial & Multi-Family Landscapes</h3>
-            <p class="small">Commercial properties, hospitality spaces, multi-family amenities, and office courtyards where consistency
+            <p class="small">Commercial properties, hospitality spaces, multi-family amenities, and office courtyards
+              where consistency
               and maintenance planning matter.</p>
           </div>
         </div>
@@ -1508,13 +1541,15 @@
         <div class="section-head single" data-aos="fade-up">
           <span class="eyebrow">Contractor Fit</span>
           <h2>Turf Fits Into the Work Contractors Already Sell</h2>
-          <p class="sub">The strongest opportunity isn’t forcing turf into every job. It’s recognizing where turf solves a real problem
+          <p class="sub">The strongest opportunity isn’t forcing turf into every job. It’s recognizing where turf solves
+            a real problem
             inside landscape, hardscape, pool, pet, and commercial work already underway.</p>
         </div>
         <div class="grid-3" data-aos="fade-up">
           <div class="card" data-aos="fade-up" data-aos-delay="0">
             <h3>Landscape Contractors</h3>
-            <p class="small">Turf fits where grass struggles, maintenance is a concern, or customers want a more usable yard.</p>
+            <p class="small">Turf fits where grass struggles, maintenance is a concern, or customers want a more usable
+              yard.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3>Hardscape & Outdoor Living</h3>
@@ -1522,19 +1557,23 @@
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h3>Pool Builders</h3>
-            <p class="small">Turf creates cleaner transitions around pool decks, lounge areas, side yards, and backyard features.</p>
+            <p class="small">Turf creates cleaner transitions around pool decks, lounge areas, side yards, and backyard
+              features.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="0">
             <h3>Design/Build Firms</h3>
-            <p class="small">Turf fits into larger outdoor living plans where it helps complete the function, finish, and sales story.</p>
+            <p class="small">Turf fits into larger outdoor living plans where it helps complete the function, finish,
+              and sales story.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3>Pet-Focused Projects</h3>
-            <p class="small">Turf solves mud, wear, cleanability, and drainage in residential and commercial pet areas.</p>
+            <p class="small">Turf solves mud, wear, cleanability, and drainage in residential and commercial pet areas.
+            </p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h3>Commercial, Play & Recreation</h3>
-            <p class="small">Turf supports properties, playgrounds, putting greens, fitness spaces, and recreation areas where consistency matters.</p>
+            <p class="small">Turf supports properties, playgrounds, putting greens, fitness spaces, and recreation areas
+              where consistency matters.</p>
           </div>
         </div>
       </div>
@@ -1622,7 +1661,8 @@
           <div data-aos="fade-right">
             <span class="eyebrow">Professional Advantage</span>
             <h2>Contractors Who Win Understand More Than the Surface</h2>
-            <p class="sub">The surface is what customers see. The system underneath determines how it performs. Understanding that
+            <p class="sub">The surface is what customers see. The system underneath determines how it performs.
+              Understanding that
               difference is what separates a better-planned installation from one that turns into a callback.</p>
           </div>
           <img src="assets/img (2).png" alt="Installation detail showing turf base preparation" class="system-img"
@@ -1668,32 +1708,41 @@
         <div class="section-head single" data-aos="fade-up">
           <span class="eyebrow">Selling Turf</span>
           <h2>What It Takes to Sell Turf Well</h2>
-          <p class="sub">Turf can be a strong service opportunity, but the best results come from understanding more than the surface. Before adding turf to a project or offering it as a new service, connecting the customer’s problem to the right application, product, and installation approach is what separates a good outcome from a callback.</p>
+          <p class="sub">Turf can be a strong service opportunity, but the best results come from understanding more
+            than the surface. Before adding turf to a project or offering it as a new service, connecting the customer’s
+            problem to the right application, product, and installation approach is what separates a good outcome from a
+            callback.</p>
         </div>
         <div class="grid-3" data-aos="fade-up">
           <div class="card" data-aos="fade-up" data-aos-delay="0">
             <h3>Product Knowledge</h3>
-            <p class="small">Different projects call for different turf characteristics. A pet area, putting green, playground, pool surround, and commercial courtyard should not all be treated the same.</p>
+            <p class="small">Different projects call for different turf characteristics. A pet area, putting green,
+              playground, pool surround, and commercial courtyard should not all be treated the same.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3>Application Fit</h3>
-            <p class="small">The strongest opportunities start with a clear customer need: mud, shade, pet wear, high traffic, poolside finishing, or low-maintenance outdoor living.</p>
+            <p class="small">The strongest opportunities start with a clear customer need: mud, shade, pet wear, high
+              traffic, poolside finishing, or low-maintenance outdoor living.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h3>Installation System Knowledge</h3>
-            <p class="small">Base prep, drainage, infill, seams, edging, and finishing details all affect how the space looks and performs.</p>
+            <p class="small">Base prep, drainage, infill, seams, edging, and finishing details all affect how the space
+              looks and performs.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="0">
             <h3>Customer Education</h3>
-            <p class="small">Trust comes from explaining what turf can do, what it cannot do, and why product selection matters.</p>
+            <p class="small">Trust comes from explaining what turf can do, what it cannot do, and why product selection
+              matters.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="100">
             <h3>Supplier Evaluation</h3>
-            <p class="small">A good turf supplier helps evaluate product options and talk through project needs before the sale, not just fill an order after the fact.</p>
+            <p class="small">A good turf supplier helps evaluate product options and talk through project needs before
+              the sale, not just fill an order after the fact.</p>
           </div>
           <div class="card" data-aos="fade-up" data-aos-delay="200">
             <h3>Focused Starting Points</h3>
-            <p class="small">Many contractors start with a focused project, such as pet areas, side yards, pool surrounds, small lawns, or putting greens, before expanding into more specialized work.</p>
+            <p class="small">Many contractors start with a focused project, such as pet areas, side yards, pool
+              surrounds, small lawns, or putting greens, before expanding into more specialized work.</p>
           </div>
         </div>
         <div class="cta-band" data-aos="fade-up">
@@ -1738,22 +1787,27 @@
             </details>
             <details>
               <summary>How can contractors add artificial turf to a landscaping business?</summary>
-              <p>Many contractors start by adding turf to project types they already quote, such as side yards, pet areas, pool
-                surrounds, small lawns, or putting greens. Starting with focused applications helps contractors learn product
+              <p>Many contractors start by adding turf to project types they already quote, such as side yards, pet
+                areas, pool
+                surrounds, small lawns, or putting greens. Starting with focused applications helps contractors learn
+                product
                 selection, base preparation, drainage, infill, seams, and finishing details before expanding into more
                 specialized work.</p>
             </details>
             <details>
               <summary>What applications are easiest for contractors to start with?</summary>
-              <p>Many contractors begin with focused projects: pet areas, side yards, small backyard lawns, pool surrounds,
-                or putting greens. These usually start with a clear customer problem like mud, shade, lawn wear, or a desire
+              <p>Many contractors begin with focused projects: pet areas, side yards, small backyard lawns, pool
+                surrounds,
+                or putting greens. These usually start with a clear customer problem like mud, shade, lawn wear, or a
+                desire
                 for a more usable space.</p>
             </details>
           </div>
           <div data-aos="fade-left">
             <details>
               <summary>Do contractors need turf installation experience to start offering it?</summary>
-              <p>No. There’s no need to start with every application at once. Learning base prep, drainage, infill, seams, and
+              <p>No. There’s no need to start with every application at once. Learning base prep, drainage, infill,
+                seams, and
                 finishing details on a focused project first is how most contractors build confidence.</p>
             </details>
             <details>
@@ -1790,10 +1844,13 @@
         <div data-aos="fade-right">
           <span class="eyebrow">Closing Note</span>
           <h2>Where to Go From Here</h2>
-          <p class="sub">This page is published by FieldTurf Landscape as an industry resource for contractors evaluating
-            artificial turf. If the opportunity raises questions about your business, applications, product fit, or what to
+          <p class="sub">This page is published by FieldTurf Landscape as an industry resource for contractors
+            evaluating
+            artificial turf. If the opportunity raises questions about your business, applications, product fit, or what
+            to
             expect from a first turf project, a direct conversation can help clarify the next step.</p>
-          <p class="sub">FieldTurf Landscape can help contractors compare turf options by application, understand product
+          <p class="sub">FieldTurf Landscape can help contractors compare turf options by application, understand
+            product
             fit, and think through project considerations before the first quote.</p>
           <div class="btn-row">
             <a href="https://fieldturflandscape.com/become-a-dealer/" class="btn btn-light"
